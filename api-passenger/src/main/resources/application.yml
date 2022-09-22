@@ -1,0 +1,23 @@
+# 应用名称
+spring:
+  application:
+    name: api-passenger
+  # nacos启动服务发现
+  cloud:
+    nacos:
+      discovery:
+        # 应用服务 WEB 访问端口
+        server-addr: 127.0.0.1:8848
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    database: 0
+
+server:
+  port: 8081
+
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:7900/eureka
+
